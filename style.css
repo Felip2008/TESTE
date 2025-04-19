@@ -298,6 +298,17 @@ justify-content: center;
 
   @media (width<900px) {
 
+    #editarBioBtn{
+      height: 10vh;
+    }
+
+    .pai{
+      width: 100%;
+      height: 110vh;
+      position:fixed;
+      display: flex;
+    }
+
     #texto_fd{
       font-size: 2.5vh;
     }
@@ -357,7 +368,7 @@ justify-content: center;
   
     .box1{
       width: 50%;
-      height: 100vh;
+      height: 120vh;
       background-color: #777777;
       padding: 1vh;
     }
@@ -366,6 +377,24 @@ justify-content: center;
       width: 50%;
       background-color: #ffffff;
       padding: 1vh;
+    }
+
+    @media (height<450px) {
+      .ft_perfil{
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
+        position: fixed;
+        margin-left: 30%;
+        margin-top: 10vh;
+        background-color: rgb(0, 0, 0);
+      }
+      .img_destaque {
+        width: 100%;
+        height: 60px; /* altura fixa (ajustável) */
+        object-fit: cover; /* mantém o aspecto sem distorcer */
+        border-radius: 10px;
+      }
     }
 
     @media (width<350px) {
@@ -569,7 +598,14 @@ justify-content: center;
         border-radius: 1vh;
       }
 
+      .pai{
+        width: 100%;
+        height: 110vh;
+        position:relative;
+        display: flex;
+      }
   
+
   }
   }
   }
@@ -661,6 +697,14 @@ justify-content: center;
         border-radius: 1vh;
       }
 
+      .pai{
+        width: 100%;
+        height: 110vh;
+        position:relative;
+        display: flex;
+      }
+  
+
     }
   }
 
@@ -696,6 +740,12 @@ justify-content: center;
 
   @media (width>900px) {
     @media (height<500px) {
+
+      #editarBioBtn{
+        height: 10vh;
+        margin-bottom: -5vh;
+      }
+
       .img_destaque {
         width: 90%;
         height: 100px; /* altura fixa (ajustável) */
@@ -718,6 +768,20 @@ justify-content: center;
         margin-top: 1vh;
         display:flex;
         border-radius: 1vh;
+      }
+
+      .pai{
+        width: 100%;
+        height: 110vh;
+        position:relative;
+        display: flex;
+      }
+  
+      .box1{
+        width: 50%;
+        height: 120vh;
+        background-color: #777777;
+        padding: 1vh;
       }
     } 
   }
