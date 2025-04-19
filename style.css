@@ -128,6 +128,7 @@ justify-content: center;
   height: 100vh;
   background-color: #ffffff;
   padding: 2vh;
+  display:flex
 }
 
 .text_box1 {
@@ -377,6 +378,7 @@ justify-content: center;
       width: 50%;
       background-color: #ffffff;
       padding: 1vh;
+      display: flex
     }
 
     @media (height<450px) {
