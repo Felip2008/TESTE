@@ -1,0 +1,33 @@
+6. Página de Perfil Interativo (Mini Portfólio)
+Objetivo:
+Criar uma página de perfil fictício (pode ser um personagem, super-herói, influenciador ou “avatar do grupo”) com layout organizado por Flexbox e interações simples com JavaScript, como trocar imagem, mudar tema ou exibir/ocultar informações.
+Pontos trabalhados:
+Layout flexível.
+Eventos JS simples como onclick, classList.toggle, etc.
+Entregáveis:
+Arquivos: index.html, style.css, script.js
+Layout organizado com Flexbox (seções: imagem, bio, dados, etc.).
+JS para interações como:
+Mudar o tema (claro/escuro),
+Mostrar/ocultar biografia,
+Trocar foto de perfil.
+Customização visual criativa.
+Requisitos Técnicos
+Tecnologias esperadas:
+HTML5
+CSS3 (com Flexbox)
+JavaScript básico (eventos, manipulação de DOM)
+Requisitos técnicos:
+1.	Página com layout responsivo usando Flexbox
+Deve conter ao menos 3 seções principais: Sobre, Projetos e Contato.
+Layout ajustável em telas menores.
+2.	Foto ou avatar e descrição pessoal
+Pode usar imagem externa ou uma do próprio aluno.
+Um parágrafo falando sobre a pessoa fictícia ou real.
+3.	Cards com projetos fictícios ou reais (mínimo 3)
+Cada card deve conter nome, descrição breve e botão/link.
+Os cards devem se alinhar usando Flexbox.
+4.	Botão "Mostrar mais" que revela informações adicionais via JavaScript
+Exemplo: mostrar hobbies, formação ou skills quando clicado.
+5.	Animações simples com transições em CSS ou interações em JS
+Ex: efeito de hover nos cards ou b̶o̶t̶ão̶ q̶u̶e̶ a̶l̶t̶e̶r̶a̶ c̶o̶r̶ d̶e̶ f̶u̶n̶d̶o̶. (já feito)

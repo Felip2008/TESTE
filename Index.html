@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETEC media</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ETEC media</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <div class="switch__container">
+                <input id="switch-shadow" class="switch switch--shadow" onclick="mudaracor()" type="checkbox">
+                <label for="switch-shadow"></label>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Stories</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<div class="pai">
+
+<div class="box1">
+  <div class="text_box1">
+
+  <h1 class="texto">Bio</h1>
+
+  <div id="bio_genero_container" class="year-select-container">
+    <p id="genero_bio" class="texto" data-bio-type="genero">Gênero</p>
+  </div>
+
+  <div id="bio_estadocivil_container" class="year-select-container">
+    <p id="estadocivil_bio" class="texto" data-bio-type="estado_civil">Est. Cívil</p>
+  </div>
+
+  <div id="bio_idade_container">
+    <p id="idade_bio" class="texto" data-bio-type="idade">Fale sobre sua Idade...</p>
+  </div>
+
+  <div id="bio_vida_container">
+    <p id="vida_bio" class="texto" data-bio-type="vida">Fale sobre sua vida...</p>
+  </div>
+
+  <div id="bio_carreira_container">
+    <p id="carreira_bio" class="texto" data-bio-type="carreira">Fale sobre sua carreira profissional...</p>
+  </div>
+
+  <div id="bio_formacao_container">
+    <p id="formacao_bio" class="texto" data-bio-type="formacao">Fale sobre sua formação...</p>
+  </div>
+
+<div id="bio_buttons">
+  <button id="editarBioBtn" class="btn btn-primary mt-2">Editar Bio</button>
+  <button id="salvarBioBtn" class="btn btn-success mt-2" style="display: none;">Salvar Bio</button>
+</div>
+
+</div>
+</div>
+    
+<div id="ft_perfil" class="ft_perfil">
+</div>
+
+<div class="box2">
+  <div class="div_box2_cima"> 
+<div class="btn-group p-2">
+  <button type="button" class="btn btn-secondary dropdown-toggle m-1" data-bs-toggle="dropdown" aria-expanded="false">
+    ⚙️
+  </button>
+  <ul class="dropdown-menu">
+    <li><button onclick="escolherImagem()" class="b_drop">Selecionar foto de perfil</button></li>
+    <li><button onclick="apagarImagem()" class="b_drop">Apagar foto de perfil</button></li>
+  </ul>
+</div>
+</div>
+
+<div class="controle">
+<div class="photos_destaques">
+  <h1 class="texto" id="texto_fd">Fotos Destaque</h1>
+  <div class="fotos_quadrado">
+
+    <div class="fileira1">
+      
+      <div class="q">
+        <img class="img_destaque" src="img/image.jpg" alt="Foto de destaque 1">
+      </div>
+
+      <div class="q">
+        <img class="img_destaque" src="img/image.jpg" alt="Foto de destaque 2">
+      </div>
+
+      <div class="q">
+        <img class="img_destaque" src="img/image.jpg" alt="Foto de destaque 3">
+      </div>
+
+    </div>
+
+    <div class="fileira2">
+
+      <div class="q">
+        <img class="img_destaque" src="img/image.jpg" alt="Foto de destaque 4">
+      </div>
+
+      <div class="q">
+        <img class="img_destaque" src="img/image.jpg" alt="Foto de destaque 5">
+      </div>
+
+      <div class="q">
+        <img class="img_destaque" src="img/image.jpg" alt="Foto de destaque 6">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+</body>
+<script src="Script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    <!-- site linkado com boostrap -->
+</html>
